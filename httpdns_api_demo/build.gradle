@@ -11,6 +11,26 @@ android {
         versionCode 1
         versionName "1.0"
     }
+    productFlavors {
+        arm {
+            ndk {
+                abiFilters "armeabi", "armeabi-v7a", "x86", "arm64"
+            }
+        }
+        x86 {
+            ndk {
+                abiFilter "x86"
+            }
+        }
+        arm64 {
+            ndk {
+                abiFilter "arm64"
+            }
+            minSdkVersion 10
+            applicationId 'alibaba.httpdns_api_demo'
+            targetSdkVersion 23
+        }
+    }
     buildTypes {
         release {
             minifyEnabled false

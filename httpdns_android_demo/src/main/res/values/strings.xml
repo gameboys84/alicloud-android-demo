@@ -5,4 +5,14 @@
     <string name="https_scene">HTTPS场景</string>
     <string name="sni_scene">SNI场景</string>
     <string name="webview_scene">WebView场景</string>
+    <string name="full_scene">完整场景测试</string>
+    <string name="http_m">http://m.qpgame.com</string>
+    <string name="http_d">http://d.qpgame.com</string>
+    <string name="http_qpgame">http://www.qpgame.com</string>
+    <string name="https_d">https://d.qpgame.com</string>
+    <string name="http_notice">http://m.qpgame.com/notice/sfjcby</string>
+    <string name="https_update">https://syver-api-wjr.cy9527.com/api/119/android/1/11</string>
+    <string name="http_ini">http://d.qpgame.com/download/update/3dbuyv118/Android/AssetsList_8.ini</string>
+    <string name="https_baidu">https://www.baidu.com</string>
+    <string name="http_taobao">http://m.taobao.com</string>
 </resources>

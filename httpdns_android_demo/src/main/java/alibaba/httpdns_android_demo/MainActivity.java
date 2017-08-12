@@ -23,6 +23,7 @@ public class MainActivity extends AppCompatActivity {
     private Button normalSceneBtn;
     private Button httpsSceneBtn;
     private Button sniSceneBtn;
+    private Button fullSceneBtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,10 +41,12 @@ public class MainActivity extends AppCompatActivity {
         normalSceneBtn = (Button) findViewById(R.id.normal_scene_btn);
         httpsSceneBtn = (Button) findViewById(R.id.https_scene_btn);
         sniSceneBtn = (Button) findViewById(R.id.sni_scene_btn);
+        fullSceneBtn = (Button) findViewById(R.id.btn_fullscene);
 
         normalSceneBtn.setOnClickListener(sceneClickListener);
         httpsSceneBtn.setOnClickListener(sceneClickListener);
         sniSceneBtn.setOnClickListener(sceneClickListener);
+        fullSceneBtn.setOnClickListener(sceneClickListener);
     }
 
     private View.OnClickListener sceneClickListener = new View.OnClickListener() {
@@ -56,6 +59,8 @@ public class MainActivity extends AppCompatActivity {
                 intent.setClass(getApplicationContext(), HttpsActivity.class);
             } else if (view == sniSceneBtn) {
                 intent.setClass(getApplicationContext(), SNIActivity.class);
+            } else if (view == fullSceneBtn) {
+                intent.setClass(getApplicationContext(), FullActivity.class);
             }
             startActivity(intent);
         }

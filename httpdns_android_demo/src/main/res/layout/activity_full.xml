@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="1000dp"
+    tools:context=".FullActivity">
+
+    <ScrollView
+        android:id="@+id/mainScroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/url"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Input url HERE with http or https"
+                android:inputType="textMultiLine|textUri"
+                android:text="@string/http_qpgame" />
+
+
+            <ScrollView
+                android:id="@+id/radioScroll"
+                android:layout_width="match_parent"
+                android:layout_height="240dp"
+                android:scrollbars="vertical">
+
+                <LinearLayout
+                    android:id="@+id/layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <RadioGroup
+                        android:id="@+id/radio_group"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:checkedButton="@+id/radio_http_qpgame"
+                        android:scrollbars="vertical">
+
+                        <RadioButton
+                            android:id="@+id/radio_http_qpgame"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="@string/http_qpgame" />
+
+                        <RadioButton
+                            android:id="@+id/radio_http_d"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="@string/http_d" />
+
+                        <RadioButton
+                            android:id="@+id/radio_http_m"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="@string/http_m" />
+
+                        <RadioButton
+                            android:id="@+id/radio_https_d"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="@string/https_d" />
+
+                        <RadioButton
+                            android:id="@+id/radio_http_notice"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="@string/http_notice" />
+
+                        <RadioButton
+                            android:id="@+id/radio_http_ini"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="@string/http_ini" />
+
+                        <RadioButton
+                            android:id="@+id/radio_https_update"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="@string/https_update" />
+
+                    </RadioGroup>
+                </LinearLayout>
+            </ScrollView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30sp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:text="NONE FUNC"
+                    android:visibility="gone" />
+
+                <Button
+                    android:id="@+id/btn_httpdns"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:text="HTTPDNS"
+                    android:textSize="10sp" />
+
+                <Button
+                    android:id="@+id/button2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:text="NONE FUNC"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/rsp"
+                android:layout_width="590dp"
+                android:layout_height="match_parent"
+                android:ems="10"
+                android:inputType="text|textMultiLine"
+                android:lines="100"
+                android:scrollbars="horizontal|vertical"
+                android:singleLine="false"
+                android:verticalScrollbarPosition="right" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</android.support.design.widget.CoordinatorLayout>

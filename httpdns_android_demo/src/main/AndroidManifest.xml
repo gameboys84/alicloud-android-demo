@@ -23,7 +23,8 @@
         </activity>
         <activity android:name=".NormalActivity" />
         <activity android:name=".HttpsActivity" />
-        <activity android:name=".SNIActivity"></activity>
+        <activity android:name=".SNIActivity" />
+        <activity android:name=".FullActivity" />
     </application>
 
 </manifest>
